@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
+  <!-- <script src="./script.js" defer></script> -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
@@ -14,16 +14,18 @@
 <body>
   <header>
     <nav>
+      <img src="images/logo.svg" alt="">
       <ul>
-        <li><img src="images/logo.svg" alt=""></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Resources</a></li>
-      </ul>
-
-      <ul>
-        <li><a href="#">Login</a></li>
-        <li><a class="btn" href="#">Sign Up</a></li>
+        <li id="menu"><a href="#"><img src="./images/menu.svg" alt=""></a></li>
+        <li>
+          <ul class="sub-menu">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a class="btn" href="#">Sign Up</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
@@ -44,7 +46,7 @@
 
     <section id="shortening-sec">
       <div class="flex-row">
-        <input type="text" placeholder="Shorten a link here...">
+        <input type="link" placeholder="Shorten a link here...">
         <input class="btn" type="button" value="Shorten It!">
       </div>
     </section>
@@ -54,19 +56,19 @@
       <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
       <div class="flex-row">
         <div class="card">
-          <h3>Brand Recognition</h3>
+          <h4>Brand Recognition</h4>
 
           <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil
             confidence in your content.</p>
         </div>
         <div class="card">
-          <h3>Detailed Records</h3>
+          <h4>Detailed Records</h4>
 
           <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps
             inform better decisions.</p>
         </div>
         <div class="card">
-          <h3>Fully Customizable</h3>
+          <h4>Fully Customizable</h4>
 
           <p>Improve brand awareness and content discoverability through customizable links, supercharging audience
             engagement.</p>
@@ -106,6 +108,12 @@
       <li>Our Team</li>
       <li>Careers</li>
       <li>Contact</li>
+    </ul>
+    <ul id="soc-media">
+      <img src="./images/icon-facebook.svg" alt="facebook">
+      <img src="./images/icon-twitter.svg" alt="twitter">
+      <img src="./images/icon-pinterest.svg" alt="pinterest">
+      <img src="./images/icon-instagram.svg" alt="instagram">
     </ul>
   </footer>
 
