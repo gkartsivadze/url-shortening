@@ -134,11 +134,16 @@ main #shortening-sec .flex-row {
   border-radius: 0.5rem;
   border: none;
 }
-main #shortening-sec .flex-row input {
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.5rem;
+main #shortening-sec .flex-row .btn {
+  border-radius: 0.25rem;
+  width: -moz-max-content;
+  width: max-content;
+  width: 8rem;
 }
 main #shortening-sec .flex-row input[type=link] {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
   width: 100%;
 }
 main #stat-sec {
@@ -357,7 +362,59 @@ footer #soc-media {
     flex-direction: column;
     padding-inline: 1rem !important;
   }
-  #shortening-sec .flex-row input {
+  #shortening-sec .flex-row .btn {
+    width: 100% !important;
+  }
+  #history div {
+    flex-direction: column !important;
+    align-items: start !important;
+    gap: 0.5rem;
+  }
+  #history div .old-link {
+    margin-right: inherit !important;
+  }
+  #history div .btn {
+    width: 100%;
     box-sizing: border-box;
+    margin: 0;
+  }
+}
+#history {
+  padding: 1rem;
+  background-color: hsl(257, 100%, 96%);
+}
+#history div {
+  color: var(--clr1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  justify-content: right;
+  align-items: center;
+  margin-block: 1rem;
+}
+#history div .old-link {
+  margin-right: auto;
+}
+#history div .new-link {
+  color: var(--clr4);
+}
+#history div input {
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.error {
+  animation: splash 0.4s ease-in-out;
+}
+
+@keyframes splash {
+  from, to {
+    outline: none;
+    box-shadow: none;
+  }
+  50% {
+    outline: 1px solid var(--clr6);
+    box-shadow: 0 0 5px 3px var(--clr6);
   }
 }/*# sourceMappingURL=style.css.map */

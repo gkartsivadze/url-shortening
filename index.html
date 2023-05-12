@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-  <!-- <script src="./script.js" defer></script> -->
+  <script src="./script.js" defer></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
@@ -46,9 +46,22 @@
 
     <section id="shortening-sec">
       <div class="flex-row">
-        <input type="link" placeholder="Shorten a link here...">
-        <input class="btn" type="button" value="Shorten It!">
+        <input id="link-in" type="link" placeholder="Shorten a link here..." required>
+        <button id="shorten-btn" class="btn">Shorten It!</button>
       </div>
+    </section>
+
+    <section id="history">
+        <div class="flex-row">
+          <span class="old-link">www.google.com</span>
+          <span class="new-link">rel.sdafs/asdqew</span>
+          <input class="btn" type="button" value="Copy">
+        </div>
+        <div class="flex-row">
+          <span class="old-link">www.asdsadsf.com</span>
+          <span class="new-link">rel.sda/asdew</span>
+          <input class="btn" type="button" value="Copy">
+        </div>
     </section>
 
     <section id="stat-sec">
@@ -87,23 +100,23 @@
     <img src="./images/logo.svg" alt="logo">
     <ul>
       <li>Features</li>
-  
+
       <li>Link Shortening</li>
       <li>Branded Links</li>
       <li>Analytics</li>
     </ul>
-  
+
     <ul>
       <li>Resources</li>
-  
+
       <li>Blog</li>
       <li>Developers</li>
       <li>Support</li>
     </ul>
-  
+
     <ul>
       <li>Company</li>
-  
+
       <li>About</li>
       <li>Our Team</li>
       <li>Careers</li>
@@ -123,7 +136,7 @@
 
 
 
-  
+
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
