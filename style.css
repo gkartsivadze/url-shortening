@@ -33,6 +33,7 @@ html, html input {
 a {
   color: var(--clr5);
   text-decoration: none;
+  transition: 0.2s;
 }
 
 h2 {
@@ -93,6 +94,7 @@ p {
   border-radius: 1rem;
   border: none;
   cursor: pointer;
+  transition: 0.2s;
 }
 .btn:hover {
   background-color: hsl(180, 26%, 75%);
@@ -242,6 +244,9 @@ footer {
   color: white;
   flex-wrap: wrap;
 }
+footer a:hover {
+  color: white;
+}
 footer > img {
   filter: brightness(100);
   margin-right: 8rem;
@@ -293,10 +298,6 @@ footer #soc-media {
   }
 }
 @media (max-width: 850px) {
-  footer {
-    flex-direction: column;
-    align-items: center;
-  }
   footer > img {
     margin: auto;
   }
@@ -313,6 +314,9 @@ footer #soc-media {
   }
   #shortening-sec .flex-row {
     margin-inline: 0rem !important;
+  }
+  footer {
+    flex-direction: column;
   }
 }
 @media (max-width: 650px) {
