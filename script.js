@@ -8,7 +8,7 @@ function backup() {
 backup()
 
 function shortenUrl(longUrl) {
-    
+
     return fetch(`https://tinyurl.com/api-create.php?url=${encodeURIComponent(longUrl)}`, { method: 'GET' })
       .then(response => response.text())
       .then(responseText => {
@@ -29,7 +29,6 @@ document.getElementById("shorten-btn").addEventListener("click", function (e) {
     let input = document.getElementById("link-in");
     let url;
     e.preventDefault();
-
 
     if (input.value.length > 3 && /.+\..+/.test(input.value) && !/\|/.test(input.value)) {
         shortenUrl(input.value)
